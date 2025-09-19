@@ -1,10 +1,10 @@
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Mở nhạc nghe cái nhe?',
+        title: 'Mở nhạc nghe cái nha?',
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#58aaf7ff',
+        cancelButtonColor: 'rgba(237, 97, 97, 1)',
         confirmButtonText: 'Yes',
         cancelButtonText: 'No',
     }).then((result) => {
@@ -19,7 +19,6 @@ window.addEventListener('load', () => {
 
 
 const animationTimeline = () => {
-    // split chars that needs to be animated individually
     const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
     const hbd = document.getElementsByClassName("wish-hbd")[0];
 
@@ -197,10 +196,11 @@ const animationTimeline = () => {
         "-=2"
     )
     .from(".hat", 0.5, {
-        x: -100,
+        x: -50,
         y: 350,
         rotation: -180,
         opacity: 0,
+        scale: 1.2
     })
     .staggerFrom(
         ".wish-hbd span",
@@ -262,7 +262,6 @@ const animationTimeline = () => {
         "+=1"
     );
 
-    // Restart Animation on click
     const replyBtn = document.getElementById("replay");
     replyBtn.addEventListener("click", () => {
         tl.restart();
