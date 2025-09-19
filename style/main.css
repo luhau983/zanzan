@@ -109,7 +109,7 @@ body {
 }
 
 .six .hat {
-  left: 50%;              /* đặt giữa container */
+  left: 55%;              /* đặt giữa container */
   position: absolute;
   /* transform: scale(0.1); */
   top: -35%;
